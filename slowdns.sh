@@ -11,12 +11,11 @@ netfilter-persistent reload
 
 cd
 #delete directory
-rm -rf /root/nsdomain
-rm nsdomain
+rm -rf /etc/xray/dns
+rm etc/xray/dns
 
 
-wget https://raw.githubusercontent.com/Hionepaintech/sc_paintech/main/slowdns/installsl.sh && chmod +x installsl.sh && ./installsl.sh
-
+wget https://raw.githubusercontent.com/ptchnew/slowdns/main/installsl.sh && chmod +x installsl.sh && ./installsl.sh
 nameserver=$(cat /etc/xray/dns)
 apt update -y
 apt install -y python3 python3-dnslib net-tools
