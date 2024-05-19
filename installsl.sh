@@ -5,10 +5,10 @@ rm -rf /etc/xray/dns
 rm etc/xray/dns
 
 ns_domain_cloudflare() {
-	DOMAIN="vip-server.cloud"
+	DOMAIN="isppaintechidn.cloud"
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	SUB=$(tr </dev/urandom -dc a-z0-9 | head -c7)
-	SUB_DOMAIN=${SUB}".vip-server.cloud"
+	SUB_DOMAIN=${SUB}".isppaintechidn.cloud"
 	NS_DOMAIN=ns.${SUB_DOMAIN}
 	CF_ID=mrbaru34@gmail.com
         CF_KEY=76f26fda668bb7e670eb5f6bfb7d065e57e88
